@@ -1,0 +1,6 @@
+framework module Pods_NetWorkRequestDemo {
+  umbrella header "Pods-NetWorkRequestDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
