@@ -11,7 +11,7 @@
 @implementation APIClient
 
 + (APIClient *)sharedInstance {
-    static APIClient *apiClient;
+    static APIClient *apiClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         apiClient = [[self alloc] init];

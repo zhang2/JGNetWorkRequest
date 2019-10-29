@@ -10,6 +10,9 @@
 		1829A27E236842F6009B168A /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A276236842F6009B168A /* APIClient.m */; };
 		1829A27F236842F6009B168A /* APIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A279236842F6009B168A /* APIResult.m */; };
 		1829A280236842F6009B168A /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A27B236842F6009B168A /* APIRequest.m */; };
+		1829A284236845FF009B168A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A283236845FF009B168A /* TestViewController.m */; };
+		1829A28923684686009B168A /* TestViewModdel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A28823684686009B168A /* TestViewModdel.m */; };
+		1829A28D236848D1009B168A /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A28C236848D1009B168A /* API.m */; };
 		182CA13B23278436005DC701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CA13A23278436005DC701 /* AppDelegate.m */; };
 		182CA13E23278436005DC701 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CA13D23278436005DC701 /* ViewController.m */; };
 		182CA14123278436005DC701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182CA13F23278436005DC701 /* Main.storyboard */; };
@@ -27,6 +30,12 @@
 		1829A27B236842F6009B168A /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
 		1829A27C236842F6009B168A /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
 		1829A27D236842F6009B168A /* APIRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequestProtocol.h; sourceTree = "<group>"; };
+		1829A282236845FF009B168A /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		1829A283236845FF009B168A /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		1829A28723684686009B168A /* TestViewModdel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewModdel.h; sourceTree = "<group>"; };
+		1829A28823684686009B168A /* TestViewModdel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewModdel.m; sourceTree = "<group>"; };
+		1829A28B236848D1009B168A /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		1829A28C236848D1009B168A /* API.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 		182CA13623278436005DC701 /* NetWorkRequestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWorkRequestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182CA13923278436005DC701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		182CA13A23278436005DC701 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +66,7 @@
 		1829A273236842F6009B168A /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				1829A28A236848B9009B168A /* API */,
 				1829A274236842F6009B168A /* APIClient */,
 				1829A277236842F6009B168A /* APIResult */,
 				1829A27A236842F6009B168A /* APIRequest */,
@@ -92,6 +102,42 @@
 			path = APIRequest;
 			sourceTree = "<group>";
 		};
+		1829A281236845E1009B168A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				1829A28623684662009B168A /* ViewModel */,
+				1829A28523684616009B168A /* ViewController */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		1829A28523684616009B168A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1829A282236845FF009B168A /* TestViewController.h */,
+				1829A283236845FF009B168A /* TestViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1829A28623684662009B168A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1829A28723684686009B168A /* TestViewModdel.h */,
+				1829A28823684686009B168A /* TestViewModdel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1829A28A236848B9009B168A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1829A28B236848D1009B168A /* API.h */,
+				1829A28C236848D1009B168A /* API.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		182CA12D23278436005DC701 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +159,7 @@
 		182CA13823278436005DC701 /* NetWorkRequestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1829A281236845E1009B168A /* Test */,
 				1829A273236842F6009B168A /* NetWork */,
 				182CA13923278436005DC701 /* AppDelegate.h */,
 				182CA13A23278436005DC701 /* AppDelegate.m */,
@@ -260,8 +307,11 @@
 			files = (
 				182CA13E23278436005DC701 /* ViewController.m in Sources */,
 				182CA14923278437005DC701 /* main.m in Sources */,
+				1829A284236845FF009B168A /* TestViewController.m in Sources */,
+				1829A28923684686009B168A /* TestViewModdel.m in Sources */,
 				1829A280236842F6009B168A /* APIRequest.m in Sources */,
 				1829A27F236842F6009B168A /* APIResult.m in Sources */,
+				1829A28D236848D1009B168A /* API.m in Sources */,
 				182CA13B23278436005DC701 /* AppDelegate.m in Sources */,
 				1829A27E236842F6009B168A /* APIClient.m in Sources */,
 			);

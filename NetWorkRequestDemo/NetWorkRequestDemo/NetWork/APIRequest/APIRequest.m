@@ -11,7 +11,6 @@
 @implementation APIRequest
 
 - (void)sendRequestTaskmethod:(RequestMethod)method parameters:(nullable id)parameters url:(nonnull id)url {
-    
 }
 
 
