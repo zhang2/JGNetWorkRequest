@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1829A27E236842F6009B168A /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A276236842F6009B168A /* APIClient.m */; };
+		1829A27F236842F6009B168A /* APIResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A279236842F6009B168A /* APIResult.m */; };
+		1829A280236842F6009B168A /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A27B236842F6009B168A /* APIRequest.m */; };
 		182CA13B23278436005DC701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CA13A23278436005DC701 /* AppDelegate.m */; };
 		182CA13E23278436005DC701 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CA13D23278436005DC701 /* ViewController.m */; };
 		182CA14123278436005DC701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182CA13F23278436005DC701 /* Main.storyboard */; };
@@ -17,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1829A275236842F6009B168A /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		1829A276236842F6009B168A /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		1829A278236842F6009B168A /* APIResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIResult.h; sourceTree = "<group>"; };
+		1829A279236842F6009B168A /* APIResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIResult.m; sourceTree = "<group>"; };
+		1829A27B236842F6009B168A /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
+		1829A27C236842F6009B168A /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
+		1829A27D236842F6009B168A /* APIRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequestProtocol.h; sourceTree = "<group>"; };
 		182CA13623278436005DC701 /* NetWorkRequestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWorkRequestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182CA13923278436005DC701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		182CA13A23278436005DC701 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,6 +54,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1829A273236842F6009B168A /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				1829A274236842F6009B168A /* APIClient */,
+				1829A277236842F6009B168A /* APIResult */,
+				1829A27A236842F6009B168A /* APIRequest */,
+				1829A27D236842F6009B168A /* APIRequestProtocol.h */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		1829A274236842F6009B168A /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				1829A275236842F6009B168A /* APIClient.h */,
+				1829A276236842F6009B168A /* APIClient.m */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		1829A277236842F6009B168A /* APIResult */ = {
+			isa = PBXGroup;
+			children = (
+				1829A278236842F6009B168A /* APIResult.h */,
+				1829A279236842F6009B168A /* APIResult.m */,
+			);
+			path = APIResult;
+			sourceTree = "<group>";
+		};
+		1829A27A236842F6009B168A /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				1829A27B236842F6009B168A /* APIRequest.m */,
+				1829A27C236842F6009B168A /* APIRequest.h */,
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
 		182CA12D23278436005DC701 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +113,7 @@
 		182CA13823278436005DC701 /* NetWorkRequestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1829A273236842F6009B168A /* NetWork */,
 				182CA13923278436005DC701 /* AppDelegate.h */,
 				182CA13A23278436005DC701 /* AppDelegate.m */,
 				182CA13C23278436005DC701 /* ViewController.h */,
@@ -84,7 +133,6 @@
 				3990206937FB3E2C4DB56585 /* Pods-NetWorkRequestDemo.debug.xcconfig */,
 				AE8833115DFB8EDD1C81D7F9 /* Pods-NetWorkRequestDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,7 +260,10 @@
 			files = (
 				182CA13E23278436005DC701 /* ViewController.m in Sources */,
 				182CA14923278437005DC701 /* main.m in Sources */,
+				1829A280236842F6009B168A /* APIRequest.m in Sources */,
+				1829A27F236842F6009B168A /* APIResult.m in Sources */,
 				182CA13B23278436005DC701 /* AppDelegate.m in Sources */,
+				1829A27E236842F6009B168A /* APIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
