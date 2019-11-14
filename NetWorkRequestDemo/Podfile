@@ -7,5 +7,6 @@ target 'NetWorkRequestDemo' do
 
   # Pods for NetWorkRequestDemo
   pod 'AFNetworking'          #网络请求
+  pod 'Toast'                 #弹窗
 
 end

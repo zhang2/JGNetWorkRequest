@@ -12,7 +12,6 @@
 		1829A280236842F6009B168A /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A27B236842F6009B168A /* APIRequest.m */; };
 		1829A284236845FF009B168A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A283236845FF009B168A /* TestViewController.m */; };
 		1829A28923684686009B168A /* TestViewModdel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A28823684686009B168A /* TestViewModdel.m */; };
-		1829A28D236848D1009B168A /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 1829A28C236848D1009B168A /* API.m */; };
 		182CA13B23278436005DC701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CA13A23278436005DC701 /* AppDelegate.m */; };
 		182CA13E23278436005DC701 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CA13D23278436005DC701 /* ViewController.m */; };
 		182CA14123278436005DC701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182CA13F23278436005DC701 /* Main.storyboard */; };
@@ -35,7 +34,6 @@
 		1829A28723684686009B168A /* TestViewModdel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewModdel.h; sourceTree = "<group>"; };
 		1829A28823684686009B168A /* TestViewModdel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewModdel.m; sourceTree = "<group>"; };
 		1829A28B236848D1009B168A /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
-		1829A28C236848D1009B168A /* API.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 		182CA13623278436005DC701 /* NetWorkRequestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWorkRequestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182CA13923278436005DC701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		182CA13A23278436005DC701 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,8 +94,8 @@
 		1829A27A236842F6009B168A /* APIRequest */ = {
 			isa = PBXGroup;
 			children = (
-				1829A27B236842F6009B168A /* APIRequest.m */,
 				1829A27C236842F6009B168A /* APIRequest.h */,
+				1829A27B236842F6009B168A /* APIRequest.m */,
 			);
 			path = APIRequest;
 			sourceTree = "<group>";
@@ -133,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				1829A28B236848D1009B168A /* API.h */,
-				1829A28C236848D1009B168A /* API.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -311,7 +308,6 @@
 				1829A28923684686009B168A /* TestViewModdel.m in Sources */,
 				1829A280236842F6009B168A /* APIRequest.m in Sources */,
 				1829A27F236842F6009B168A /* APIResult.m in Sources */,
-				1829A28D236848D1009B168A /* API.m in Sources */,
 				182CA13B23278436005DC701 /* AppDelegate.m in Sources */,
 				1829A27E236842F6009B168A /* APIClient.m in Sources */,
 			);
