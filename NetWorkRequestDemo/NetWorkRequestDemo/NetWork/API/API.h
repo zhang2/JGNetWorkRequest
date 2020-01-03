@@ -12,10 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface API : NSObject
 
-# define BaseUrl "xxxxx"
-
-#define login(name, password) BaseUrl + "/name" + "/password"
-
 @end
 
 NS_ASSUME_NONNULL_END
